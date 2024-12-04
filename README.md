@@ -2,8 +2,6 @@
 # SkinQuestor - League of Legends Unowned Skins PowerShell Script
 
 
-
-
 ## Initial goal
 The initial goal was to create a script that lists unowned skins available in the reroll pool. However, it became clear that this approach wasn’t feasible without messing with the client in a way that Riot likely prohibits.
 
@@ -11,7 +9,6 @@ Instead, this script provides a filtered list of unowned skins, categorizes them
 
 
 ## Features
-
 - **Identifies unowned skins:** Finds skins that the player does not own
 - **Categorizes by price:** Sorts skins into groups based on price (e.g., regular prices, skins available in the current Mythic Shop, BE Special items such as "150000 BE Urfwick," and unpurchasable skins).
 - **Saves to a text file:** Allows the user to save the filtered list for easy viewing.
@@ -22,14 +19,17 @@ Instead, this script provides a filtered list of unowned skins, categorizes them
 2. Run the **PowerShell** script. (Right click and choose run with PowerShell)
 3. The script will prompt you to select a save location for the output file.
 4. Once the script finishes, your unowned skins, categorized by price, will be saved to the chosen text file.
-## Requirements
 
+
+## Requirements
 - Windows OS with PowerShell and Curl (comes pre-installed with Windows).
 - League of Legends client running since the script pulls data directly from the local League client’s LCU API.
 
-## Why PowerShell?
 
+## Why PowerShell?
 PowerShell is the ideal choice for this script because it’s natively available on all modern Windows installations, meaning there’s no need for users to install external dependencies (like Python or Node.js).
+
+
 ## How it Works
 The script operates entirely on your local network, ensuring that no data is exposed to the outside internet. Here's a high-level overview of how the script functions:
 
@@ -44,8 +44,7 @@ The script operates entirely on your local network, ensuring that no data is exp
 - **Output:** Finally, the script generates a categorized list and saves it to a text file chosen by the user.
 
 
-### Output file Preview
-
+## Output file Preview
 ```
 Cost: 390
   Skin Name: SKIN_NAME
@@ -80,3 +79,10 @@ Cost: Mythic_Shop
 Cost: Unpurchasable
   Skin Name: SKIN_NAME
 ```
+
+
+## License
+
+This project is licensed under the [CC BY-NC-ND 4.0 License](LICENSE). You are free to use and distribute the extension for non-commercial purposes, with attribution to the original creator. Redistributions or modifications for commercial purposes are not permitted.
+
+For more details, please refer to the [LICENSE](LICENSE) file.

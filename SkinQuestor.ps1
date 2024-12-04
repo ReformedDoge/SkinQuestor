@@ -11,7 +11,9 @@ function Center-Text {
         [ValidateSet("Black", "DarkBlue", "DarkGreen", "DarkCyan", "DarkRed", "DarkMagenta", "DarkYellow", "Gray", "DarkGray", "Blue", "Green", "Cyan", "Red", "Magenta", "Yellow", "White")]
         [string]$color = "White"
     )
-    $padding = [math]::Floor(($width - $text.Length) / 2)
+    # Ensure padding is non-negative
+    $padding = [math]::Max([math]::Floor(($width - $text.Length) / 2), 0)
+	
     Write-Host (' ' * $padding + $text) -ForegroundColor $color
 }
 
