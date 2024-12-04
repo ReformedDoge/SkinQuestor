@@ -83,6 +83,6 @@ Cost: Unpurchasable
 
 ## License
 
-This project is licensed under the [CC BY-NC-ND 4.0 License](LICENSE). You are free to use and distribute the extension for non-commercial purposes, with attribution to the original creator. Redistributions or modifications for commercial purposes are not permitted.
+This project is licensed under the [CC BY-NC-ND 4.0 License](LICENSE). You are free to use and distribute the script for non-commercial purposes, with attribution to the original creator. Redistributions or modifications for commercial purposes are not permitted.
 
 For more details, please refer to the [LICENSE](LICENSE) file.
